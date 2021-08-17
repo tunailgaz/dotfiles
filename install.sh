@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 config_git() {
-    cp  "git/gitconfig" "~/.gitconfig"
+    cp  "$(pwd)git/gitconfig" "~/.gitconfig"
 }
 
 config_aliases() {
-     cp  "aliases/memphis" "~/.memphis_profile"
+     cp  "$(pwd)aliases/memphis" "~/.memphis_profile"
 }
 
 config_aliases

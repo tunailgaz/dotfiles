@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 config_git() {
-    ln -sf  "git/gitconfig" "~/.gitconfig"
+    cp  "git/gitconfig" "~/.gitconfig"
 }
 
 config_aliases() {
-     ln -sf  "aliases/memphis" "~/.memphis_profile"
+     cp  "aliases/memphis" "~/.memphis_profile"
 }
 
 config_aliases

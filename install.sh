@@ -28,5 +28,7 @@ config_aliases() {
     create_symlinks "aliases/memphis" "~/.memphis_profile"
 }
 
+config_aliases
+config_git
 
 source ~/.memphis_profile

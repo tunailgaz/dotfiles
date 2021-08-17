@@ -24,7 +24,9 @@ config_git() {
     create_symlinks "git/gitconfig" "~/.gitconfig"
 }
 
-config_git() {
+config_aliases() {
     create_symlinks "aliases/memphis" "~/.memphis_profile"
 }
+
+
 source ~/.memphis_profile

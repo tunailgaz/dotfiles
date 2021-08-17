@@ -1,0 +1,52 @@
+# docker
+alias d='docker'
+alias dc='docker-compose'
+alias dex='docker exec -it'
+alias dslf='docker service logs -f'
+alias dsls='docker service ls'
+alias ds='docker service'
+
+alias dps='docker ps'
+alias dpsa='docker ps -a'
+alias di='docker inspect'
+alias dl='docker logs'
+alias dlf='docker logs -f'
+
+alias dvls='docker volume ls'
+alias dvi='docker volume inspect'
+alias dnls='docker network ls'
+alias dni='docker network inspect'
+alias dstats='docker stats'
+
+
+alias dsl='docker service logs'
+
+
+
+
+alias dsu='docker service update'
+alias dsuf='docker service update --force'
+
+
+alias dstats='docker stats --format "table {{.Name}}\t {{.CPUPerc}}\t{{.MemUsage}}\t{{.MemPerc}}"'
+
+alias dkps="docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Image}}'"
+
+dfind () {
+  docker ps -f name=$1 --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Image}}'
+}
+
+# git
+
+alias gs='git status'
+alias grp='git rev-parse --abbrev-ref HEAD'
+alias gcm='git commit -a'
+alias gc='git checkout'
+alias gcb=git checkout -b
+alias gb=git branch
+alias gl='git log --oneline -7'
+
+alias gb='git branch -a'
+
+
+export NODE_ENV="production"

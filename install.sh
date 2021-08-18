@@ -21,7 +21,8 @@ create_symlinks() {
 }
 
 config_aliases() {
-   create_symlinks "aliases/memphis" ".memphis_profile"
+  cp $PWD/"aliases/memphis" $HOME/".memphis_profile"
+  create_symlinks "aliases/memphis" ".memphis_profile"
 }
 config_git() {
    create_symlinks "git/gitconfig" ".gitconfig"

@@ -21,7 +21,9 @@ create_symlinks() {
 }
 
 config_aliases() {
-  cp "$(pwd)/aliases/memphis" "$(HOME)/.memphis_profile"
+  src="aliases/memphis"
+  dest=".memphis_profile"
+  cp "$PWD"/$src $dest
   create_symlinks "aliases/memphis" ".memphis_profile"
 }
 config_git() {
@@ -31,4 +33,5 @@ config_git() {
 config_aliases
 config_git
 
-source "~/.memphis_profile"
+
+#source ~/.memphis_profile

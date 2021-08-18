@@ -21,11 +21,11 @@
 #}
 
 config_git() {
-   cp  "$(pwd)/git/gitconfig" "~/.gitconfig"
+   cp  -f "$(pwd)/git/gitconfig" "~/.gitconfig"
 }
 
 config_aliases() {
-   cp  "$(pwd)/aliases/memphis" "~/.memphis_profile"
+   cp -f  "$(pwd)/aliases/memphis" "~/.memphis_profile"
 }
 
 config_aliases
